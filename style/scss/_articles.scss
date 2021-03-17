@@ -1,11 +1,12 @@
 .article-list {
 
     .article-list-item {
+        margin-bottom: 50px;
 
         .article-container {
             display: flex;
             justify-content: space-between;
-            margin: 0 auto 50px;
+            margin: 0 auto;
 
             @media (max-width: 1100px) {
                 display: block;
@@ -13,7 +14,7 @@
 
             .article-box {
                 margin: 0 auto;
-                padding: 40px;
+                padding: 40px 40px 0 40px;
                 max-width: 560px;
 
                 .article-title {
@@ -40,6 +41,10 @@
                 margin: 0 auto;
                 max-width: 500px;
 
+                @media (max-width: 1100px) {
+                    margin: 40px auto 0;
+                }
+
                 img {
                     width: 100%;
                 }
@@ -50,11 +55,20 @@
 
             .article-box {
                 order: 1;
+
+                .article-btn {
+                    color: $secondColor;
+                    background-color: #4b4e73;
+                }
             }
 
             .artisle-img {
                 order: 0;
             }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }

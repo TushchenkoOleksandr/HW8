@@ -1,0 +1,31 @@
+.some-link {
+    background-color: #d75d0e;
+
+    .some-link-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @media (max-width: 720px) {
+            display: block;
+        }
+
+        .some-link-item {
+            min-width: 30%;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                font-family: $SecondFonts;
+                font-size: 18px;
+                line-height: 2;
+                text-align: center;
+                color: $secondColor;
+
+                &:hover {
+                    color: #4b4e73;
+                }
+            }
+        }
+    }
+}
