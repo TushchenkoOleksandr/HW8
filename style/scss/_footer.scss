@@ -1,0 +1,25 @@
+.main-footer {
+	background-image: url(../../img/newsletter-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.footer-container {
+		max-width: 650px;
+		text-align: center;
+
+		span {
+			font-family: ProximaNova;
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 1.33;
+			color: rgba(255, 255, 255, 0.5);
+
+			&:after {
+				content: "symu.co";
+				font-weight: bold;
+				color: $secondColor;
+			}
+		}
+	}
+}
