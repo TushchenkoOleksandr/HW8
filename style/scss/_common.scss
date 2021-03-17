@@ -43,5 +43,9 @@
     &:hover {
         background-color: black;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
