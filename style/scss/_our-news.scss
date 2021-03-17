@@ -1,0 +1,50 @@
+.our-news {
+    margin-top: 0;
+    background-color: whitesmoke;
+
+    .our-news-title {
+        margin-bottom: 85px;
+        color: $primaryColor;
+    }
+
+    .news-body {
+
+        .card {
+            display: block;
+            min-width: 370px;
+
+            .card-body {
+                padding: 0;
+
+                .card-img-news {
+                    padding-bottom: 40px;
+                    width: 371px;
+                    height: 254px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .card-title-news {
+                margin-bottom: 20px;
+                font-family: $PrimaryFonts;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1;
+                text-align: center;
+                color: $primaryColor;
+            }
+
+            .card-text-news {
+                margin-bottom: 40px;
+                color: $primaryColor;
+            }
+        }
+    }
+
+    .news-btn {
+        padding: 20px 55px;
+    }
+}
