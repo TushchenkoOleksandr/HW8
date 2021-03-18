@@ -45,7 +45,8 @@
     cursor: pointer;
 
     &:hover {
-        background-color: black;
+       padding: 20px 65px;
+       transition-duration: 1s;
     }
 
     &:focus {
