@@ -1,25 +1,19 @@
 .main-footer {
-	background-image: url(../../img/newsletter-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background: no-repeat center/cover url(../../img/newsletter-bg.png);
 
-	.footer-container {
-		max-width: 650px;
+	.footer-body {
+		margin: 0 auto;
+		max-width: 666px;
 		text-align: center;
 
-		span {
-			font-family: ProximaNova;
-			font-size: 18px;
-			font-weight: 300;
-			line-height: 1.33;
+		.footer-description {
+			font: 300 18px/1.33 ProximaNova;
 			color: rgba(255, 255, 255, 0.5);
+		}
 
-			&:after {
-				content: "symu.co";
-				font-weight: bold;
-				color: $secondColor;
-			}
+		.footer-link {
+			font: bold 18px/1.33 ProximaNova;
+			color: $secondColor;
 		}
 	}
 }

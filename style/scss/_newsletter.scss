@@ -1,70 +1,58 @@
 .newsletter {
-    background-image: url(../../img/newsletter-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: no-repeat center/cover url('../../img/newsletter-bg.png');
 
-    .container-newsletter {
+    .newsletter-title {
+        margin-bottom: 22px;
+    }
+
+    .newsletter-description {
+        margin: 0 auto 43px;
+        max-width: 550px;
+        line-height: 1.6;
+    }
+
+    .newsletter-form {
+        margin: 0 auto;
+        max-width: 510px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        border-radius: 27px;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
 
-        .newsletter-title {
-            margin-bottom: 22px;
-        }
+        .email {
+            padding-left: 36px;
+            font: 18px/1,67 $PrimaryFonts;
+            color: #f3f4f6;
+            border: none;
+            background-color: transparent;
 
-        .newsletter-description {
-            margin-bottom: 43px;
-            max-width: 550px;
-            line-height: 1.6;
-        }
-
-        .newsletter-form {
-            width: 510px;
-
-            @media (max-width: 550px) {
-                max-width: 300px;
+            &::-webkit-input-placeholder {
+                color: #f3f4f6;
             }
 
-            .search {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                border-radius: 27px;
-                border: solid 1px rgba(255, 255, 255, 0.5);
-                background-color: rgba(255, 255, 255, 0.5);
-               
+            &:focus {
+                outline: none;
+            }
+        }
 
-                .email {
-                    padding-left: 36px;
-                    font-family: Roboto Slab;
-                    font-size: 18px;
-                    line-height: 1.67;
-                    color: #f3f4f6;
-                    border: none;
-                    background-color: transparent;
+        .newsletter-btn {
+            padding: 20px 20px;
 
+        
 
-                    @media (max-width: 550px) {
-                        max-width: 200px;
-                    }
+            &:hover {
+                padding: 20px 25px;
+            }
+        }
+    }
+}
+@media (min-width: $md) {
+    .newsletter {
+        .newsletter-form {
+            .newsletter-btn {
+                padding: 20px 60px;
 
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                button {
-                    margin: 0;
-                    
-                    @media (max-width: 550px) {
-                        max-width: 100px;
-                        text-align: left;
-                        padding-left: 5%;
-                        padding-right: 5%;
-                    }
-                }
             }
         }
     }

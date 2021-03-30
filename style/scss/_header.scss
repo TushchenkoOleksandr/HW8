@@ -6,33 +6,37 @@
         font-family: $PrimaryFonts;
         line-height: 1;
 
-        .logo {
-            margin-bottom: 8px;
-            font-size: 36px;
-            font-weight: bold;
-            color: $primaryColor;
-        }
+        .container-fluid {
+            .navbar-brand {
+                .logo {
+                    margin-bottom: 8px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: $primaryColor;
+                }
 
-        .logo-description {
-            font-size: 16px;
-            letter-spacing: 0.96px;
-            color: #dd4b2b;
-        }
-
-        .nav-link {
-            padding: 17px;
-            font-size: 18px;
-            color: $primaryColor;
-
-            &:hover {
-                color: $secondColor;
-                border-radius: 24.5px;
-                background-color: #dd4b2b;
+                .logo-description {
+                    font-size: 16px;
+                    letter-spacing: 0.96px;
+                    color: #dd4b2b;
+                }
             }
-        }
 
-        li + li {
-            margin-left: 20px;
+            .navbar-collapse {
+                flex-grow: 0;
+
+                .nav-link {
+                    padding: 17px;
+                    font-size: 18px;
+                    color: $primaryColor;
+
+                    &:hover {
+                        color: $secondColor;
+                        border-radius: 24.5px;
+                        background-color: #dd4b2b;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,45 +1,80 @@
-﻿.hero {
+﻿.welcome-section {
+    background: no-repeat center/cover url('../../img/say-bg.png');
 
-    .welcome-bg {
-        background-image: url(../../img/say-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    .welcome-title {
+        margin-bottom: 20px;
+        font: 300 36px/1 $PrimaryFonts;
+        text-align: center;
+        color: $secondColor;
+    }
 
-        .welcome {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: calc(100vh - 170px);
+    .welcome-description {
+        font-size: 20px;
+    }
 
-            .welcome-title {
-                margin-bottom: 20px;
-                font-family: $PrimaryFonts;
-                font-size: 72px;
-                font-weight: 300;
-                line-height: 1;
-                text-align: center;
-                color: $secondColor;
-            }
+    .welcome-img {
+        margin: 50px auto 15px;
+        width: 135px;
+        height: 135px;
 
-            .welcome-description {
-                margin-bottom: 130px;
-            }
+        img {
+            width: 100%;
+        }
+    }
 
-            .card-img-top {
-                margin: 0 auto 35px;
-                width: 135px;
-                height: 135px;
+    .card-title {
+        margin-bottom: 15px;
+    }
 
-                img {
-                    width: 100%;
-                }
-            }
+    .welcome-btn {
+        display: block;
+        margin: 30px auto 0;
+    }
+}
 
-            .card-title {
-                margin-bottom: 29px;
-            }
+@media (min-width: $md) {
+
+    .welcome-section {
+
+
+        .welcome-title {
+            font-size: 72px;
+        }
+
+        .welcome-description {
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+
+        .welcome-btn {
+            margin: 80px auto 0;
         }
     }
 }
+
+@media (min-width: $lg) {
+    .welcome-section {
+
+        display: flex;
+        align-items: center;
+        background: no-repeat center/cover url('../../img/say-bg.png');
+        min-height: calc(100vh - 170px);
+
+        .welcome-title {
+            margin-bottom: 20px;
+        }
+
+        .welcome-description {
+            margin-bottom: 130px;
+        }
+
+        .welcome-img {
+            margin: 0px auto 36px;
+        }
+
+        .card-title {
+            margin-bottom: 29px;
+        }
+    }
+}
+

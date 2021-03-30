@@ -1,25 +1,13 @@
 .some-link {
     background-color: #d75d0e;
-
-    .some-link-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        @media (max-width: 720px) {
-            display: block;
-        }
+    ul { 
+        column-count: 2;
 
         .some-link-item {
-            min-width: 30%;
             text-align: center;
-
             a {
                 text-decoration: none;
-                font-family: $SecondFonts;
-                font-size: 18px;
-                line-height: 2;
-                text-align: center;
+                font: 18px/2 $SecondFonts;
                 color: $secondColor;
 
                 &:hover {
@@ -29,3 +17,12 @@
         }
     }
 }
+
+@media (min-width: $md) {
+    .some-link {
+        ul {
+            column-count: 3;
+        }
+    }
+}
+
